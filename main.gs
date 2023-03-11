@@ -1,7 +1,7 @@
 function doPost(e) {
 
   // const postData = e.postData.contents;
-  Logger.log(e);
+  Logger.log(e.source.userId);
 
   //パラメーターを取得
   const itemName = e.parameter.itemName;
@@ -22,7 +22,7 @@ function sendReply(itemName) {
   var messages = [
     {
       "type": "text",
-      "text": "ありがたいことに、" + itemName + "は完売致しました。またの来店をお待ちしております。"
+      "text": "ともみへみだよ〜わからないことがあったら聞いてね💗"
     },
   ];
   var payload = {
